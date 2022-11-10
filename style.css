@@ -1,0 +1,88 @@
+*{
+    font-family:  sans-serif;
+    margin: 0;
+    padding:0 ;
+}
+body{
+    background-color: blue;
+    color: #fff;
+    align-items: center;
+    padding: 230px 50px 30px 550px;
+    animation: aniMate 20s infinite ;
+    animation-direction: alternate-reverse;
+}
+@keyframes aniMate {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+}
+/* h1{
+    width: 100%;
+    grid-row: 1fr;
+    font-size: 70px;
+    transition: all 5s ease-in-out;
+    animation: round 5s infinite;
+}
+@keyframes round {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+} */
+
+
+h1{
+    font-size: 6vh;
+    transition: 2s;
+    transform: scale(1);
+    animation: round ease-in-out 4s infinite;
+}
+
+@keyframes round {
+    1% {
+scale: 80%;
+    }
+}
+h3{
+    width: 45%;
+    padding: 30px 200px;
+    font-style: normal;
+    font-size: 34px;
+
+}
+kbd{
+    font-style: normal;
+    background-color: #fff;
+    color: rgb(100, 100, 91);
+    animation-name: myAnimation ;
+    animation-duration: 10s;
+    animation-iteration-count:infinite
+}
+@keyframes myAnimation{
+    0% {
+        left: 850px;
+        background-color: burlywood;
+}
+25%{
+    transform: translateX();
+}
+}
+ol{
+    width: 60%;
+    padding: 9px 250px;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 25px;
+}
+footer{
+    padding: 15% 16%;
+}
